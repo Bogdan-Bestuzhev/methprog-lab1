@@ -1,0 +1,478 @@
+\hypertarget{lab1_8cpp}{}\doxysection{lab1.\+cpp File Reference}
+\label{lab1_8cpp}\index{lab1.cpp@{lab1.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_flower}{Flower}}
+\begin{DoxyCompactList}\small\item\em Class \mbox{\hyperlink{class_flower}{Flower}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{lab1_8cpp_afcdf2ac94c170801f02b36e853ef1bc6}{operator$<$$<$}} (ostream \&out, const \mbox{\hyperlink{class_flower}{Flower}} \&A)
+\item 
+bool \mbox{\hyperlink{lab1_8cpp_afc03e88924c3a05f76a0e432e51af580}{operator$>$}} (\mbox{\hyperlink{class_flower}{Flower}} f1, \mbox{\hyperlink{class_flower}{Flower}} f2)
+\begin{DoxyCompactList}\small\item\em More Operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lab1_8cpp_a40909debbb43bec87bcc8cb575c6179c}{operator$>$=}} (\mbox{\hyperlink{class_flower}{Flower}} f1, \mbox{\hyperlink{class_flower}{Flower}} f2)
+\begin{DoxyCompactList}\small\item\em More or equal Operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lab1_8cpp_ae7fe41ee829054f4029cfe99bb968a74}{operator$<$}} (\mbox{\hyperlink{class_flower}{Flower}} f1, \mbox{\hyperlink{class_flower}{Flower}} f2)
+\begin{DoxyCompactList}\small\item\em Less Operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{lab1_8cpp_a39d7e1ebd0681ccbc65f3651352a8755}{operator$<$=}} (\mbox{\hyperlink{class_flower}{Flower}} f1, \mbox{\hyperlink{class_flower}{Flower}} f2)
+\begin{DoxyCompactList}\small\item\em Less or equal Operator. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{lab1_8cpp_a89418ba38d0873e8d39e5780814e1ef2}{find\+Smallest\+Position}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, long start\+Position, long vector\+Length)
+\begin{DoxyCompactList}\small\item\em function find\+Smallest\+Position for selection\+Sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selection\+Sort}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, long vector\+Length)
+\begin{DoxyCompactList}\small\item\em selection\+Sort \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lab1_8cpp_a2f18031b41b6fbd66a0ab9a7eb562204}{Partition}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, int start, int pivot)
+\begin{DoxyCompactList}\small\item\em function partition \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quick\+Sort}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, int start, int End)
+\begin{DoxyCompactList}\small\item\em quick\+Sort \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lab1_8cpp_ad8ca95608cae390af060963589afd640}{heapify}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, long list\+Length, long root)
+\begin{DoxyCompactList}\small\item\em function heapify \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heap\+Sort}} (vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&A, long list\+Length)
+\begin{DoxyCompactList}\small\item\em heap\+Sort \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{lab1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{lab1_8cpp_a89418ba38d0873e8d39e5780814e1ef2}\label{lab1_8cpp_a89418ba38d0873e8d39e5780814e1ef2}} 
+\index{lab1.cpp@{lab1.cpp}!findSmallestPosition@{findSmallestPosition}}
+\index{findSmallestPosition@{findSmallestPosition}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{findSmallestPosition()}{findSmallestPosition()}}
+{\footnotesize\ttfamily long find\+Smallest\+Position (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{long}]{start\+Position,  }\item[{long}]{vector\+Length }\end{DoxyParamCaption})}
+
+
+
+function find\+Smallest\+Position for selection\+Sort 
+
+Find position of the smallest object in vector 
+\begin{DoxyParams}{Parameters}
+{\em Vector,start} & position and length of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of smallest position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_ad8ca95608cae390af060963589afd640}\label{lab1_8cpp_ad8ca95608cae390af060963589afd640}} 
+\index{lab1.cpp@{lab1.cpp}!heapify@{heapify}}
+\index{heapify@{heapify}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{heapify()}{heapify()}}
+{\footnotesize\ttfamily void heapify (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{long}]{list\+Length,  }\item[{long}]{root }\end{DoxyParamCaption})}
+
+
+
+function heapify 
+
+Procedure for converting a subtree with root node i to a binary heap 
+\begin{DoxyParams}{Parameters}
+{\em vector,length} & of vector and root index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}\label{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}} 
+\index{lab1.cpp@{lab1.cpp}!heapSort@{heapSort}}
+\index{heapSort@{heapSort}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{heapSort()}{heapSort()}}
+{\footnotesize\ttfamily void heap\+Sort (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{long}]{list\+Length }\end{DoxyParamCaption})}
+
+
+
+heap\+Sort 
+
+PThe main function that performs pyramidal sorting 
+\begin{DoxyParams}{Parameters}
+{\em vector,length} & of vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{lab1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{lab1.cpp@{lab1.cpp}!main@{main}}
+\index{main@{main}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Realization\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ \mbox{\hyperlink{lab1_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{long}\ vibor;}
+\DoxyCodeLine{\ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}print\(\backslash\)n\ 1\ for\ selectionSort\(\backslash\)n\ 2\ for\ quickSort\(\backslash\)n\ 3\ for\ heapSort\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ cin\ >>\ vibor;}
+\DoxyCodeLine{\ \ \ \ vector<Flower>\ f1,f2,f3,f4,f5,f6,f7;}
+\DoxyCodeLine{\ \ \ \ ifstream\ fin100(\textcolor{stringliteral}{"{}f100.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ fin500(\textcolor{stringliteral}{"{}f500.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ fin1k(\textcolor{stringliteral}{"{}f1000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ fin10k(\textcolor{stringliteral}{"{}f10000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ fin20k(\textcolor{stringliteral}{"{}f20000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ fin50k(\textcolor{stringliteral}{"{}f50000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fin100k(\textcolor{stringliteral}{"{}f100000.txt"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 100;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin100\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f1.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 500;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin500\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f2.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 1000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin1k\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f3.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 10000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin10k\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f4.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 20000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin20k\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f5.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 50000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin50k\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f6.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 100000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ a,b,c,d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ fin100k\ >>\ a\ >>\ b\ >>\ c\ >>\ d;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flower}{Flower}}\ x(a,b,c,d);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ f7.push\_back(x);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{if}\ (vibor\ ==\ 1)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f1,\ 100);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 500\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s500\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f2,\ 500);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s500)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 1000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s1k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f3,\ 1000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s1k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 10000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s10k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f4,\ 10000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s10k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 20000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s20k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f5,\ 20000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s20k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 50000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s50k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f6,\ 50000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s50k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}{selectionSort}}(f7,\ 100000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (vibor\ ==\ 2)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f1,\ 0,\ f1.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 500\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s500\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f2,\ 0,\ f2.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s500)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 1000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s1k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f3,\ 0,\ f3.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s1k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 10000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s10k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f4,\ 0,\ f4.size()-\/1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s10k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 20000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s20k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f5,\ 0,\ f5.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s20k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 50000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s50k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f6,\ 0,\ f6.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s50k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}{quickSort}}(f7,\ 0,\ f7.size()\ -\/\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (vibor\ ==\ 3)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f1,\ f1.size());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 500\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s500\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f2,\ 500);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s500)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 1000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s1k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f3,\ 1000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s1k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 10000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s10k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f4,\ 10000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s10k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 20000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s20k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f5,\ 20000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s20k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 50000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s50k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f6,\ 50000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s50k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}selection\ size\ 100000\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ clock\_t\ s100k\ =\ clock();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{lab1_8cpp_a97b52c80944b12402fa87165de8572ae}{heapSort}}(f7,\ 100000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ cout\ <<\ (double)(clock()\ -\/\ s100k)\ *\ 1000\ /\ CLOCKS\_PER\_SEC\ <<\ \textcolor{stringliteral}{"{}\ ms\(\backslash\)n"{}};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ fin100.close();}
+\DoxyCodeLine{\ \ \ \ fin500.close();}
+\DoxyCodeLine{\ \ \ \ fin1k.close();}
+\DoxyCodeLine{\ \ \ \ fin10k.close();}
+\DoxyCodeLine{\ \ \ \ fin20k.close();}
+\DoxyCodeLine{\ \ \ \ fin50k.close();}
+\DoxyCodeLine{\ \ \ \ fin100k.close();}
+\DoxyCodeLine{\ \ \ \ ofstream\ o100(\textcolor{stringliteral}{"{}out100.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o500(\textcolor{stringliteral}{"{}out500.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o1k(\textcolor{stringliteral}{"{}out1000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o10k(\textcolor{stringliteral}{"{}out10000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o20k(\textcolor{stringliteral}{"{}out20000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o50k(\textcolor{stringliteral}{"{}out50000.txt"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ o100k(\textcolor{stringliteral}{"{}out100000.txt"{}});}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 100;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o100\ <<\ f1[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 500;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o500\ <<\ f2[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 1000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o1k\ <<\ f3[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 10000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o10k\ <<\ f4[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 20000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o20k\ <<\ f5[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 50000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o50k\ <<\ f6[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ 100000;\ i++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ o100k\ <<\ f7[i];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ o100.close();}
+\DoxyCodeLine{\ \ \ \ o500.close();}
+\DoxyCodeLine{\ \ \ \ o1k.close();}
+\DoxyCodeLine{\ \ \ \ o10k.close();}
+\DoxyCodeLine{\ \ \ \ o20k.close();}
+\DoxyCodeLine{\ \ \ \ o50k.close();}
+\DoxyCodeLine{\ \ \ \ o100k.close();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{lab1_8cpp_ae7fe41ee829054f4029cfe99bb968a74}\label{lab1_8cpp_ae7fe41ee829054f4029cfe99bb968a74}} 
+\index{lab1.cpp@{lab1.cpp}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f1,  }\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+Less Operator. 
+
+The operator less for two objects of the \mbox{\hyperlink{class_flower}{Flower}} class. 
+\begin{DoxyParams}{Parameters}
+{\em Two} & \mbox{\hyperlink{class_flower}{Flower}} type objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the second objects is more than the first 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_afcdf2ac94c170801f02b36e853ef1bc6}\label{lab1_8cpp_afcdf2ac94c170801f02b36e853ef1bc6}} 
+\index{lab1.cpp@{lab1.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_flower}{Flower}} \&}]{A }\end{DoxyParamCaption})}
+
+A friendly operator for outputting class fields to a stream 
+\begin{DoxyParams}{Parameters}
+{\em A} & link to the output stream and a constant link to the output object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A link to the output stream for the possibility of further transformations by the compiler 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_a39d7e1ebd0681ccbc65f3651352a8755}\label{lab1_8cpp_a39d7e1ebd0681ccbc65f3651352a8755}} 
+\index{lab1.cpp@{lab1.cpp}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily bool operator$<$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f1,  }\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+Less or equal Operator. 
+
+The operator less equal for two objects of the \mbox{\hyperlink{class_flower}{Flower}} class. 
+\begin{DoxyParams}{Parameters}
+{\em Two} & \mbox{\hyperlink{class_flower}{Flower}} type objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the second objects is more or equal than the first 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_afc03e88924c3a05f76a0e432e51af580}\label{lab1_8cpp_afc03e88924c3a05f76a0e432e51af580}} 
+\index{lab1.cpp@{lab1.cpp}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool operator$>$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f1,  }\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+More Operator. 
+
+The operator more for two objects of the \mbox{\hyperlink{class_flower}{Flower}} class. 
+\begin{DoxyParams}{Parameters}
+{\em Two} & \mbox{\hyperlink{class_flower}{Flower}} type objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if, when comparing fields by priority, some field of the first object is lexically more than the corresponding field of the second object, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_a40909debbb43bec87bcc8cb575c6179c}\label{lab1_8cpp_a40909debbb43bec87bcc8cb575c6179c}} 
+\index{lab1.cpp@{lab1.cpp}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily bool operator$>$= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f1,  }\item[{\mbox{\hyperlink{class_flower}{Flower}}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+More or equal Operator. 
+
+The operator more or equal for two objects of the \mbox{\hyperlink{class_flower}{Flower}} class. 
+\begin{DoxyParams}{Parameters}
+{\em Two} & \mbox{\hyperlink{class_flower}{Flower}} type objects \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if, when comparing fields by priority, some field of the first object is lexically more or equal than the corresponding field of the second object, False otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_a2f18031b41b6fbd66a0ab9a7eb562204}\label{lab1_8cpp_a2f18031b41b6fbd66a0ab9a7eb562204}} 
+\index{lab1.cpp@{lab1.cpp}!Partition@{Partition}}
+\index{Partition@{Partition}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{Partition()}{Partition()}}
+{\footnotesize\ttfamily int Partition (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{int}]{start,  }\item[{int}]{pivot }\end{DoxyParamCaption})}
+
+
+
+function partition 
+
+change index of pivot element 
+\begin{DoxyParams}{Parameters}
+{\em vector,start} & index and now pivot index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pivot index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}\label{lab1_8cpp_a0e9e4b0ebacf5e7a2e9ac5c2328ff644}} 
+\index{lab1.cpp@{lab1.cpp}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily void quick\+Sort (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{int}]{start,  }\item[{int}]{End }\end{DoxyParamCaption})}
+
+
+
+quick\+Sort 
+
+changes the vector recursively 
+\begin{DoxyParams}{Parameters}
+{\em vector,start} & index and end index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}\label{lab1_8cpp_aedd6b6b22f69f67edb212cb24c2491cf}} 
+\index{lab1.cpp@{lab1.cpp}!selectionSort@{selectionSort}}
+\index{selectionSort@{selectionSort}!lab1.cpp@{lab1.cpp}}
+\doxysubsubsection{\texorpdfstring{selectionSort()}{selectionSort()}}
+{\footnotesize\ttfamily void selection\+Sort (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_flower}{Flower}} $>$ \&}]{A,  }\item[{long}]{vector\+Length }\end{DoxyParamCaption})}
+
+
+
+selection\+Sort 
+
+swap i-\/element in vector and the smallest from other part 
+\begin{DoxyParams}{Parameters}
+{\em Vector} & and length of the vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
